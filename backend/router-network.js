@@ -8,7 +8,7 @@ const { send } = require("process");
 
 module.exports = router
 
-const PASSWORD = "123456"
+const PASSWORD = process.env.GETH_PASSWORD || (() => { throw new Error("Define GETH_PASSWORD"); })()
 const BALANCE = "0x200000000000000000000000000000000000000000000000000000000000000"
 const MICUENTA = "704765a908962e25626f2bea8cdf96c84dedaa0b"
 
