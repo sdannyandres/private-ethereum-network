@@ -70,7 +70,7 @@ Content-Type: application/json
 {
     "jsonrpc": "2.0",
     "method": "personal_sign",
-    "params": ["0x65","0x641bbdd751ef82b0a3323c5e462b81ba4ac7a54f","123456" ],
+    "params": ["0x65","0x641bbdd751ef82b0a3323c5e462b81ba4ac7a54f","<GETH_PASSWORD>" ],
     "id": 0
 }
 
@@ -88,7 +88,7 @@ Content-Type: application/json
         "to": "0x704765a908962E25626f2bea8CDF96C84DedaA0B",
         "value": "0xA" ,
         "nonce":"0x0"
-    },"123456" ],
+    },"<GETH_PASSWORD>" ],
     "id": 0
 }
 
